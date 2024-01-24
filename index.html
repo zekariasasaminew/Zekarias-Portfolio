@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/5f8816dbdd.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="photo/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Developer</p>
+                    <h1>Hello, I'm <span>Zekarias</span> Asaminew<br>Welcome!</h1>
+                </div>
+            </div>
+        </div>
+<!-- -------about-----------  -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="photo/pfp.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p class="text">Hello, I'm Zekarias, a driven student at Augustana College, pursuing a diverse academic journey with a major in Biochemistry alongside Computer Science and Applied Mathematics. This multidisciplinary approach allows me to explore the intricate connections between life sciences and cutting-edge technologies.
+                            My passion extends beyond the boundaries of traditional disciplines, particularly towards the transformative intersection of technology and the healthcare industry. As someone with a profound interest in both Biochemistry and Computer Science, I am enthusiastic about the potential synergy between these fields. <span class="moreText">
+                            In addition to my technical pursuits, I find great fulfillment in envisioning how Artificial Intelligence (AI) and Machine Learning can revolutionize healthcare practices. The dynamic combination of my biochemistry background and computational skills positions me uniquely to contribute meaningfully to advancements in healthcare.
+                            I believe that by applying AI and machine learning in healthcare, we can unlock novel insights, accelerate drug discovery, and usher in a new era of personalized medicine. This convergence of disciplines fuels my commitment to making a lasting impact on people's lives through innovative and technology-driven healthcare solutions.
+                            Looking ahead, I am excited to navigate the intricate intersections of Biochemistry, Computer Science, and healthcare, contributing to advancements that transcend traditional boundaries and pave the way for a healthier, more technologically advanced future.</span></p>
+                            <button class="read-more-btn">Read More</button>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Python</span><br>Web frameworks, Analytical Skills, Debugging</li>
+                                <li><span>Java</span><br>Big Data, Java build tools, Design Patterns</li>
+                                <li><span>HTML/CSS</span><br>Version Control, Git, Responsive Design</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2022 - Present</span><br>● Library Circulation and Research Help Worker</li>
+                                <p>Provided valuable research assistance to students, addressing their inquiries and facilitating a positive
+                                    learning environment <br> <br>
+                                   Improved library circulation efficiency through meticulous organization, ensuring smooth book
+                                    transactions and maintaining accurate records</p>
+                                <li><span>2021 - 2022</span><br>● Integral Calculus Researcher</li>
+                                <p>Calculated drug concentrations, and dosage rates for medical treatments, and predicted population
+                                    growth and decay in biological systems <br> <br>
+                                    Calculated time complexity for algorithms, conducted efficiency analysis, and analyzed signals and images
+                                    through techniques like Fourier analysis</p>
+                                <li><span>2021 - 2022</span><br>● Tutor/Grader</li>
+                                <p>Simplified complex concepts in Math/Physics, evaluated Math/Physics worksheets, homeworks, projects, and lab reports</p>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022 - Present</span><br>Augustana College</li>
+                                <li><span>2022</span><br>South West Academy, Honors List</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- ------------------------------------projects--------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Relevant Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="photo/DemVsRep.png">
+                <div class="layer">
+                    <h3>Gerrymandering Analysis</h3>
+                    <p>● Performs in-depth data mining, organization, and analysis of 2022 Democratic/Republican vote data of
+                        all 52 states, focusing on gerrymandering detection and its impact on congressional seats</p>
+                    <a href="https://github.com/zekariasasaminew"><i class="fa-solid fa-link"></i></a>
+                </div>                
+            </div>
+            <div class="work">
+                <img src="photo/Hunter.png">
+                <div class="layer">
+                    <h3>Hunter and Prey</h3>
+                    <p>● Featured space key as the weapon of choice for precise shooting, and strategic mouse clicks to dictate the
+                        hunter's dynamic movements</p>
+                    <a href="https://github.com/zekariasasaminew"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="photo/Solitaire.png">
+                <div class="layer">
+                    <h3>Skip3Solitaire</h3>
+                    <p>● Leveraged Object-Oriented Programming and data structures to employ multiple classes for move
+                        validation and encapsulation of game components</p>
+                    <a href="https://github.com/zekariasasaminew"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- ---------------contact------------------------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> zekariassolomon1122@gmail.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Chicago, IL</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/zekarias-asaminew-b516552a2/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/zeki_s_a/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/zekariasasaminew"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="photo/Zekarias_Resume.pdf" download class="btn btn2">Download Resume</a> 
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Zekarias. Made by Zekarias.</p>
+    </div>
+</div>
+
+        <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu")
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script src="main.js"></script>
+        
+    </body>
+</html>
